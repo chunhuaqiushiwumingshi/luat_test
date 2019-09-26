@@ -5,7 +5,7 @@ require "pm"
 require "pins"
 --采用一机一密认证方案时：
 --PRODUCT_KEY为阿里云华东2站点上创建的产品的ProductKey，用户根据实际值自行修改
-local PRODUCT_KEY = ""
+local PRODUCT_KEY = "a1O4sSrlYOB"
 --除了上面的PRODUCT_KEY外，还需要提供获取DeviceName的函数、获取DeviceSecret的函数
 --设备名称使用函数getDeviceName的返回值，默认为设备的IMEI
 --设备密钥使用函数getDeviceSecret的返回值，默认为设备的SN
@@ -29,8 +29,8 @@ local function getDeviceName()
     --默认使用设备的IMEI作为设备名称，用户可以根据项目需求自行修改
     --return misc.getImei()
 
-    --用户单体测试时，可以在此处直接返回阿里云的iot控制台上注册的设备名称，例如return "862991419835241"
-    return ""
+    
+    return "866262040522053"
 end
 
 --[[
@@ -55,7 +55,7 @@ local function getDeviceSecret()
     --return misc.getSn()
 
     --用户单体测试时，可以在此处直接返回阿里云的iot控制台上生成的设备密钥，例如return "y7MTCG6Gk33Ux26bbWSpANl4OaI0bg5Q"
-    return ""
+http://ask.openluat.com/image/show/attachments-2018-11-D5dzvKJn5bf1121a51e64.png    return "XRhe3aNAuLNvVEzZCLWv1l8Ksgv4UtYD"
 end
 
 --阿里云客户端是否处于连接状态
